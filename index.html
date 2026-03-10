@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusFlow — Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #060610;
+      color: #f0f0ff;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse 70% 50% at 70% 10%, rgba(123,108,255,0.1), transparent),
+        radial-gradient(ellipse 50% 40% at 10% 80%, rgba(0,217,200,0.07), transparent);
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 40px;
+      border-bottom: 1px solid #1f1f40;
+      background: rgba(6,6,16,0.8);
+      backdrop-filter: blur(12px);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-icon {
+      width: 34px; height: 34px; border-radius: 10px;
+      background: linear-gradient(135deg, #7b6cff, #00d9c8);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px;
+      box-shadow: 0 0 16px rgba(123,108,255,0.4);
+    }
+    .nav-name {
+      font-size: 18px; font-weight: 800;
+      background: linear-gradient(135deg, #fff, #b8aeff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav-tag {
+      font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: #3d3d6b;
+      background: #13132a; border: 1px solid #1f1f40;
+      padding: 3px 10px; border-radius: 20px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 64px 24px 48px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(123,108,255,0.1); border: 1px solid rgba(123,108,255,0.25);
+      color: #b8aeff; font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; padding: 6px 14px; border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 42px; font-weight: 800; line-height: 1.15;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #ffffff, #b8aeff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 15px; color: #8888bb; max-width: 480px; margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+    .last-updated {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; color: #3d3d6b;
+      background: #0d0d1f; border: 1px solid #1f1f40;
+      padding: 5px 14px; border-radius: 20px;
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── HIGHLIGHT BOX ── */
+    .highlight-box {
+      background: rgba(0,229,160,0.06);
+      border: 1px solid rgba(0,229,160,0.2);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 36px;
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .highlight-icon {
+      font-size: 26px; flex-shrink: 0; margin-top: 2px;
+    }
+    .highlight-box h3 {
+      font-size: 15px; font-weight: 700; color: #00e5a0; margin-bottom: 6px;
+    }
+    .highlight-box p {
+      font-size: 13px; color: #8888bb; line-height: 1.7;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      background: #0d0d1f;
+      border: 1px solid #1f1f40;
+      border-radius: 18px;
+      padding: 26px 28px;
+      margin-bottom: 16px;
+      position: relative; overflow: hidden;
+    }
+    .section::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent 5%, #7b6cff 40%, #00d9c8 60%, transparent 95%);
+      opacity: 0.25;
+    }
+    .section-header {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+    }
+    .section-num {
+      width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
+      background: rgba(123,108,255,0.12); border: 1px solid rgba(123,108,255,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 800; color: #b8aeff;
+    }
+    .section h2 {
+      font-size: 17px; font-weight: 700; color: #f0f0ff;
+    }
+    .section p {
+      font-size: 13px; color: #8888bb; line-height: 1.8; margin-bottom: 12px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* ── ITEM LIST ── */
+    .item-list {
+      display: flex; flex-direction: column; gap: 9px;
+      margin-top: 4px;
+    }
+    .item {
+      display: flex; align-items: flex-start; gap: 10px;
+      background: #13132a; border: 1px solid #1f1f40;
+      border-radius: 10px; padding: 11px 14px;
+    }
+    .item-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: #7b6cff; flex-shrink: 0; margin-top: 6px;
+    }
+    .item-dot.teal { background: #00d9c8; }
+    .item-dot.green { background: #00e5a0; }
+    .item-dot.red { background: #ff5f7e; }
+    .item-text {
+      font-size: 13px; color: #8888bb; line-height: 1.6;
+    }
+    .item-text b { color: #f0f0ff; font-weight: 600; }
+
+    /* ── ZERO DATA GRID ── */
+    .zero-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; margin-top: 4px;
+    }
+    .zero-card {
+      background: #13132a; border: 1px solid #1f1f40;
+      border-radius: 12px; padding: 14px;
+      text-align: center;
+    }
+    .zero-card .z-icon { font-size: 22px; margin-bottom: 6px; display: block; }
+    .zero-card .z-title { font-size: 12px; font-weight: 700; color: #f0f0ff; margin-bottom: 3px; }
+    .zero-card .z-desc { font-size: 11px; color: #3d3d6b; line-height: 1.5; }
+    .zero-card.yes { border-color: rgba(0,229,160,0.2); }
+    .zero-card.yes .z-title { color: #00e5a0; }
+    .zero-card.no  { border-color: rgba(255,95,126,0.15); }
+    .zero-card.no  .z-title { color: #ff5f7e; }
+
+    /* ── CONTACT ── */
+    .contact-box {
+      background: rgba(123,108,255,0.06);
+      border: 1px solid rgba(123,108,255,0.2);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .contact-box h3 { font-size: 16px; font-weight: 700; color: #f0f0ff; margin-bottom: 8px; }
+    .contact-box p  { font-size: 13px; color: #8888bb; line-height: 1.7; margin-bottom: 14px; }
+    .contact-email {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #13132a; border: 1px solid #28285a;
+      color: #b8aeff; font-size: 13px; font-weight: 600;
+      padding: 9px 18px; border-radius: 10px; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .contact-email:hover { border-color: #7b6cff; background: rgba(123,108,255,0.12); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid #1f1f40;
+      font-size: 12px; color: #3d3d6b;
+    }
+    footer a { color: #7b6cff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      nav { padding: 14px 20px; }
+      .hero h1 { font-size: 30px; }
+      .zero-grid { grid-template-columns: 1fr; }
+      .section { padding: 20px 18px; }
+      main { padding: 0 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <div class="nav-icon">⚡</div>
+      <span class="nav-name">FocusFlow</span>
+    </a>
+    <span class="nav-tag">Privacy Policy</span>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">🔒 Your Privacy Matters</div>
+    <h1>Privacy Policy</h1>
+    <p>FocusFlow is built with privacy at its core. We don't collect, store, or share any of your personal data — ever.</p>
+    <div class="last-updated">📅 Last updated: March 2026</div>
+  </div>
+
+  <main>
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight-box">
+      <div class="highlight-icon">✅</div>
+      <div>
+        <h3>Short Version — We collect nothing.</h3>
+        <p>FocusFlow works entirely on your device. Your focus sessions, streaks, settings, and blocked sites never leave your browser. No accounts, no servers, no tracking — just pure productivity.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">1</div>
+        <h2>What Data We Collect</h2>
+      </div>
+      <p>FocusFlow collects <strong>zero personal data</strong>. The extension stores the following information locally on your device only:</p>
+      <div class="item-list">
+        <div class="item"><div class="item-dot"></div><div class="item-text"><b>Timer settings</b> — your preferred session duration (15m, 25m, 50m, or custom)</div></div>
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>Focus stats</b> — today's session count and minutes focused</div></div>
+        <div class="item"><div class="item-dot green"></div><div class="item-text"><b>Streak data</b> — your current streak and last active day</div></div>
+        <div class="item"><div class="item-dot"></div><div class="item-text"><b>Weekly data</b> — focus minutes per day for the last 14 days only</div></div>
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>Blocked sites list</b> — the domains you choose to block</div></div>
+        <div class="item"><div class="item-dot green"></div><div class="item-text"><b>Preferences</b> — theme (dark/light), sound on/off, session goal</div></div>
+      </div>
+      <p style="margin-top: 16px;">All of this is stored using <code style="background:#1f1f40;padding:2px 6px;border-radius:4px;font-size:12px;color:#b8aeff;">chrome.storage.local</code> — it lives only on your device and is only accessible by you.</p>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <h2>What We Do NOT Collect</h2>
+      </div>
+      <div class="zero-grid">
+        <div class="zero-card no"><span class="z-icon">🚫</span><div class="z-title">No Personal Info</div><div class="z-desc">No name, email, phone, or account required</div></div>
+        <div class="zero-card no"><span class="z-icon">🚫</span><div class="z-title">No Browsing History</div><div class="z-desc">We never read or log which sites you visit</div></div>
+        <div class="zero-card no"><span class="z-icon">🚫</span><div class="z-title">No Analytics</div><div class="z-desc">No Google Analytics, no tracking pixels</div></div>
+        <div class="zero-card no"><span class="z-icon">🚫</span><div class="z-title">No Servers</div><div class="z-desc">Zero backend. Nothing is ever uploaded anywhere</div></div>
+        <div class="zero-card no"><span class="z-icon">🚫</span><div class="z-title">No Ads</div><div class="z-desc">We show no ads and work with no ad networks</div></div>
+        <div class="zero-card no"><span class="z-icon">🚫</span><div class="z-title">No Third Parties</div><div class="z-desc">No data is shared with any third party, ever</div></div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">3</div>
+        <h2>Permissions We Use</h2>
+      </div>
+      <p>FocusFlow requests the following Chrome permissions, and here is exactly why:</p>
+      <div class="item-list">
+        <div class="item"><div class="item-dot"></div><div class="item-text"><b>storage</b> — To save your timer settings and stats locally on your device only</div></div>
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>alarms</b> — To trigger session complete and break end notifications accurately</div></div>
+        <div class="item"><div class="item-dot green"></div><div class="item-text"><b>notifications</b> — To show you a desktop alert when your focus session ends</div></div>
+        <div class="item"><div class="item-dot"></div><div class="item-text"><b>declarativeNetRequest</b> — To block distraction sites during focus sessions only. We never read your browsing history</div></div>
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>tabs</b> — Only used to redirect blocked site attempts to our blocked.html page</div></div>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <h2>Site Blocking — How It Works</h2>
+      </div>
+      <p>When you start a focus session, FocusFlow uses Chrome's <strong>declarativeNetRequest</strong> API to block the sites you have chosen. Here's what this means for your privacy:</p>
+      <div class="item-list">
+        <div class="item"><div class="item-dot green"></div><div class="item-text">Blocking rules are set directly in Chrome — we do not read or log your browsing activity</div></div>
+        <div class="item"><div class="item-dot green"></div><div class="item-text">We only know which sites you <em>chose to add</em> to your blocklist — nothing else</div></div>
+        <div class="item"><div class="item-dot green"></div><div class="item-text">Blocking is automatically disabled when your session ends or you reset the timer</div></div>
+        <div class="item"><div class="item-dot green"></div><div class="item-text">Your blocklist is stored locally and never transmitted anywhere</div></div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">5</div>
+        <h2>Data Storage & Deletion</h2>
+      </div>
+      <p>All data is stored locally using Chrome's built-in storage. You are in full control:</p>
+      <div class="item-list">
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>To clear all FocusFlow data:</b> Go to chrome://extensions → FocusFlow → click "Clear Storage", or simply uninstall the extension</div></div>
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>Weekly data auto-prunes:</b> Stats older than 14 days are automatically deleted from your device</div></div>
+        <div class="item"><div class="item-dot teal"></div><div class="item-text"><b>Uninstalling:</b> Removing the extension permanently deletes all stored data from your device</div></div>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">6</div>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>FocusFlow does not knowingly collect any data from anyone, including children under 13. Since we collect no data whatsoever, there is no special concern for younger users. The extension is safe for use by students of all ages.</p>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">7</div>
+        <h2>Changes to This Policy</h2>
+      </div>
+      <p>If we ever make changes to this privacy policy, we will update the "Last updated" date at the top of this page. We will also note any significant changes in the extension's Chrome Web Store update notes.</p>
+      <p>Since we collect no data, any future updates are likely to only make this policy more permissive, not less.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact-box">
+      <h3>📬 Questions?</h3>
+      <p>If you have any questions about this privacy policy or how FocusFlow handles data, feel free to reach out.</p>
+      <a class="contact-email" href="mailto:your-email@gmail.com">✉️ your-email@gmail.com</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 FocusFlow. All rights reserved. &nbsp;·&nbsp; <a href="#">Back to Top</a></p>
+  </footer>
+
+</body>
+</html>
